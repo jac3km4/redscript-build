@@ -14,7 +14,7 @@ if (!(Test-Path .\data\cache\final.redscripts)) {
 
 Push-Location redscript
 
-cargo pgo build -- -p scc-lib
+cargo pgo build -- -p scc-lib --features mmap,popup
 cargo pgo build -- -p scc
 foreach ($sample in $samples) {
 	cargo pgo run -- -p scc -- -compile "../samples/$sample" -customCacheDir '../data/cache'
