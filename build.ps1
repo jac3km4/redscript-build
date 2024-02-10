@@ -9,7 +9,7 @@ $samples = @(
 # script cache file used for compilation
 if (!(Test-Path .\data\cache\final.redscripts)) {
 	mkdir -p .\data\cache
-	curl 'https://oshi.at/LUYQ/final.redscripts.bk' -O './data/cache/final.redscripts'
+	Invoke-WebRequest 'https://oshi.at/LUYQ/final.redscripts.bk' -OutFile './data/cache/final.redscripts'
 }
 
 Push-Location redscript
