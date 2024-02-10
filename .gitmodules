@@ -1,0 +1,6 @@
+[submodule "samples/djkovrik-mods"]
+	path = samples/djkovrik-mods
+	url = https://github.com/djkovrik/CP77Mods
+[submodule "redscript"]
+	path = redscript
+	url = https://github.com/jac3km4/redscript
